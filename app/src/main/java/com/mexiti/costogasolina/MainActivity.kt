@@ -107,7 +107,7 @@ fun CostGasLayout() {
        )
        EditNumberField(
            label = R.string.litros,
-           leadingIcon = R.drawable.gasolina ,
+           leadingIcon = R.drawable.gasolina,
            keyboardsOptions = KeyboardOptions.Default.copy(
                keyboardType = KeyboardType.Number,
                imeAction = ImeAction.Next
@@ -132,8 +132,11 @@ fun CostGasLayout() {
 
         Text(
             text = stringResource(R.string.monto_total,total),
+            modifier= Modifier.fillMaxWidth()
+                .height(50.dp),
             fontWeight = FontWeight.Black,
-            fontSize = 30.sp
+            fontSize = 30.sp,
+            textAlign = TextAlign.Center
         )
 
     }
